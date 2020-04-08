@@ -7,7 +7,7 @@ Aplicação Web desenvolvido em Asp.Net MVC
 Clone the repository:
 
 ```sh
-git clone https://github.com/cmcirilo/quiron.git
+git clone https://github.com/cmcirilo/quiron_loja_virtual.git
 ```
 
 ## Help
