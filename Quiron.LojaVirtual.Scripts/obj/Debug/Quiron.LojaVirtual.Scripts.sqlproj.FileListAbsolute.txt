@@ -1,0 +1,9 @@
+C:\Cirilo\Cloud\Mega\Cursos\DevMedia - Curso de ASP.NET MVC\Quiron - Loja Virtual\Quiron.LojaVirtual.Scripts\bin\Debug\Quiron.LojaVirtual.Scripts.dacpac
+C:\Cirilo\Cloud\Mega\Cursos\DevMedia - Curso de ASP.NET MVC\Quiron - Loja Virtual\Quiron.LojaVirtual.Scripts\obj\Debug\Model.xml
+C:\Cirilo\Cloud\Mega\Cursos\DevMedia - Curso de ASP.NET MVC\Quiron - Loja Virtual\Quiron.LojaVirtual.Scripts\obj\Debug\refactor.xml
+C:\Cirilo\Cloud\Mega\Cursos\DevMedia - Curso de ASP.NET MVC\Quiron - Loja Virtual\Quiron.LojaVirtual.Scripts\obj\Debug\postdeploy.sql
+C:\Cirilo\Cloud\Mega\Cursos\DevMedia - Curso de ASP.NET MVC\Quiron - Loja Virtual\Quiron.LojaVirtual.Scripts\obj\Debug\predeploy.sql
+C:\Cirilo\Cloud\Mega\Cursos\DevMedia - Curso de ASP.NET MVC\Quiron - Loja Virtual\Quiron.LojaVirtual.Scripts\obj\Debug\Quiron.LojaVirtual.Scripts.dll
+C:\Cirilo\Cloud\Mega\Cursos\DevMedia - Curso de ASP.NET MVC\Quiron - Loja Virtual\Quiron.LojaVirtual.Scripts\obj\Debug\Quiron.LojaVirtual.Scripts.pdb
+C:\Cirilo\Cloud\Mega\Cursos\DevMedia - Curso de ASP.NET MVC\Quiron - Loja Virtual\Quiron.LojaVirtual.Scripts\bin\Debug\Quiron.LojaVirtual.Scripts.dll
+C:\Cirilo\Cloud\Mega\Cursos\DevMedia - Curso de ASP.NET MVC\Quiron - Loja Virtual\Quiron.LojaVirtual.Scripts\bin\Debug\Quiron.LojaVirtual.Scripts.pdb

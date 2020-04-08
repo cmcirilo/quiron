@@ -1,0 +1,62 @@
+﻿@model IEnumerable<Quiron.LojaVirtual.Dominio.Entidades.Produto>
+
+@{
+    ViewBag.Title = "Administrativo - Produtos";
+    Layout = "~/Areas/Administrativo/Views/Shared/_AdministrativoLayout.cshtml";
+}
+
+<div class="panel panel-default">
+    <div class="panel-heading row">
+            <div class="col-md-10">
+                <h3>Quiron Loja Virtual - Administrativo - Produtos</h3>
+            </div>
+            <div class="col-md-2">
+                @if (Request.IsAuthenticated)
+            {
+                    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="icon-user">
+                        </i>Olá, @User.Identity.Name <span class="caret"></span>
+                    </a>
+
+                    @Html.ActionLink("Sair", "Logoff", new { area = "", controller = "Autenticacao" })
+                }
+            </div>    
+    </div>
+    <div class="panel-body">
+        @Html.ActionLink("Novo Produto", "NovoProduto", "Produto", new { @class = "btn btn-default" })
+    </div>
+
+    <table class="table table-condensed table-striped table-bordered">
+        <thead>
+            <tr>
+                <th class="text-right">#Id</th>
+                <th>Nome</th>
+                <th class="text-right">Preço</th>
+                <th class="text-center">Excluir</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr id="row-@item.ProdutoId">
+                    <td class="text-right"># @item.ProdutoId</td>
+                    <td>@Html.ActionLink(item.Nome, "Alterar", new { item.ProdutoId })</td>
+                    <td class="text-right">@item.Preco.ToString("c")</td>
+                    <td class="text-center">
+                        @*@using (Html.BeginForm("Excluir","Produto"))
+                            {
+                                @Html.Hidden("ProdutoId",item.ProdutoId)
+                                <input type="submit" class="btn btn-default btn-xs" value="Excluir"/>
+                            }*@
+                        <input type="submit" class="btn btn-default btn-xs" id="@item.ProdutoId" name="@item.Nome" value="Excluir" />
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+
+    </table>
+
+</div>
+
+@Html.Partial("Confirmacao")

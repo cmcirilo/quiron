@@ -1,0 +1,47 @@
+@model IEnumerable<Quiron.LojaVirtual.Dominio.Entidades.Produto>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+</head>
+<body>
+    <h2 class="jumbotron">Index</h2>
+    <p>
+        @Html.ActionLink("Criar Produto", "Create")
+    </p>
+    <table class="table">
+        <tr class="row">
+            <td class="col-md-3">@Html.DisplayNameFor(model => model.Nome)</td>
+            <td class="col-md-5">@Html.DisplayNameFor(model => model.Descricao)</td>
+            <td class="col-md-2">@Html.DisplayNameFor(model => model.Preco)</td>
+            <td class="col-md-1">@Html.DisplayNameFor(model => model.Categoria)</td>
+            <td class="col-md-1"></td>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr class="row">
+                <td class="col-md-3">@Html.DisplayFor(modelItem => item.Nome)</td>
+                <td class="col-md-5">@Html.DisplayFor(modelItem => item.Descricao)</td>
+                <td class="col-md-2">@Html.DisplayFor(modelItem => item.Preco)</td>
+                <td class="col-md-1">@Html.DisplayFor(modelItem => item.Categoria)</td>
+                <td class="col-md-1"></td>
+            </tr>
+        }
+    </table>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
